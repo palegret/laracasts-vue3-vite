@@ -6,6 +6,8 @@ const { flash } = useFlash();
 
 <template>
   <div>
-    <button @click="flash('It also works on the About view!')">Click Me</button>
+    <button @click="flash('About Us', 'It also works on the About view!')">
+      Click Me
+    </button>
   </div>
 </template>

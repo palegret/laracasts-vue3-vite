@@ -6,6 +6,6 @@ const { flash } = useFlash();
 
 <template>
   <main>
-    <button @click="flash('It works!')">Click Me</button>
+    <button @click="flash('Yay!', 'It works!', 'success')">Click Me</button>
   </main>
 </template>
