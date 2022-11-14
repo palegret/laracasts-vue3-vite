@@ -1,15 +1,10 @@
+<script setup>
+import { counter } from "@/stores/counterStore";
+</script>
+
 <template>
   <div>
-    <h1 class="counter">{{ count }}</h1>
+    <h1>{{ counter.count }}</h1>
+    <button @click="counter.increment()">Increment</button>
   </div>
 </template>
-
-<style>
-@media (min-width: 1024px) {
-  .counter {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
