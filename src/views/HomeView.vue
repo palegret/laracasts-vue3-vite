@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from "vue";
 
+import { state } from "@/stores/QuizStore";
 import { useFlash } from "@/composables/useFlash";
 import { useStorage } from "@/composables/useStorage";
 
@@ -41,6 +42,9 @@ setTimeout(() => {
           style="width: 100%; height: 300px"
         />
       </form>
+    </div>
+    <div>
+      <h5>Quiz name: {{ state.name }}</h5>
     </div>
   </main>
 </template>
