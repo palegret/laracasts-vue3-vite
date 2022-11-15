@@ -1,9 +1,10 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "./components/HelloWorld.vue";
+import { RouterView } from "vue-router";
+// import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
 <template>
+  <!-- 
   <header>
     <img
       alt="Vue logo"
@@ -11,23 +12,26 @@ import HelloWorld from "./components/HelloWorld.vue";
       src="@/assets/logo.svg"
       width="125"
       height="125"
-    />
-
+    /> 
+    
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
-
+      
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
         <RouterLink to="/counter">Counter</RouterLink>
+        <RouterLink to="/team">Team</RouterLink>
       </nav>
     </div>
   </header>
+  -->
 
   <RouterView />
 </template>
 
+<!--
 <style scoped>
 header {
   line-height: 1.5;
@@ -91,3 +95,4 @@ nav a:first-of-type {
   }
 }
 </style>
+-->
