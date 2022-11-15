@@ -2,13 +2,13 @@ import { defineStore } from "pinia";
 
 export const useCounterStore = defineStore("counter", {
   // Options API: data()
-  state() { 
+  state() {
     return {
       count: 0,
     };
   },
   // Options API: methods {}
-  actions: { 
+  actions: {
     increment() {
       if (this.count < 10) {
         this.count++;
@@ -16,7 +16,7 @@ export const useCounterStore = defineStore("counter", {
     },
   },
   // Options API: computed {}
-  getters: { 
+  getters: {
     remaining() {
       return 10 - this.count;
     },
