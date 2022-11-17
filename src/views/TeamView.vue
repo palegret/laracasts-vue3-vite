@@ -24,7 +24,5 @@ setTimeout(() => {
     </div>
 
     <TeamFooter />
-
-
   </div>
 </template>
