@@ -1,21 +1,16 @@
 <script setup>
 import { useTeamStore } from "@/stores/TeamStore";
 
+import AddMemberModal from "./AddMemberModal.vue";
+
 const team = useTeamStore();
 </script>
 
 <template>
   <header class="flex justify-between">
     <div>
-      <button
-        class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded disabled:bg-gray-400"
-        :disabled="!team.spotsRemaining"
-        @click="$emit('team-member-add')"
-      >
-        Add Member ({{ team.spotsRemaining }} Spots Left)
-      </button>
+      <AddMemberModal />
     </div>
-
     <div>
       <div class="inline-flex items-center text-3xl relative">
         <img src="../../assets/smiley.png" alt="" class="mr-2" />
